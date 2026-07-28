@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С днём рождения, Кристина ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-heart">❤️</div>
+    <p>Загружаю подарок для тебя...</p>
+  </div>
+
+  <div class="petals" aria-hidden="true"></div>
+  <div class="flower-corner flower-corner-left" aria-hidden="true">🌼</div>
+  <div class="flower-corner flower-corner-right" aria-hidden="true">🤍</div>
+
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Для самой особенной девушки</p>
+      <h1>С днём рождения,<br><span>Кристина ❤️</span></h1>
+      <p class="hero-text">
+        Сегодня тебе 23. И в этот день я хочу ещё раз сказать, как сильно рад, что ты появилась в моей жизни.
+      </p>
+      <button class="main-button" data-scroll="#story">Открыть мой подарок</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section story reveal" id="story">
+      <div class="section-heading">
+        <p class="eyebrow">Наша маленькая история</p>
+        <h2>Пять месяцев рядом с тобой</h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="photo-card reveal-item">
+          <img src="images/photo-1.jpg" alt="Наша фотография">
+          <p>Наша любимая фотография</p>
+        </div>
+
+        <div class="story-text">
+          <p>
+            Всего пять месяцев назад мы только начинали узнавать друг друга,
+            а сегодня ты стала одним из самых дорогих людей в моей жизни.
+          </p>
+          <p>
+            Спасибо тебе за твои улыбки, поддержку, заботу и за каждый момент,
+            который мы проводим вместе.
+          </p>
+          <p class="accent-text">
+            Я очень рад, что однажды встретил именно тебя.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Моменты, которые я ценю</p>
+        <h2>Наши воспоминания</h2>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card reveal-item">
+          <img src="images/photo-2.jpg" alt="Наше воспоминание">
+          <div>
+            <span>01</span>
+            <h3>Наше знакомство</h3>
+            <p>Тот самый день, с которого началась наша история.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal-item">
+          <img src="images/photo-3.jpg" alt="Наше воспоминание">
+          <div>
+            <span>02</span>
+            <h3>Наши прогулки</h3>
+            <p>Когда рядом ты, даже обычный день становится особенным.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal-item">
+          <img src="images/photo-4.jpg" alt="Наше воспоминание">
+          <div>
+            <span>03</span>
+            <h3>Твоя улыбка</h3>
+            <p>Одна из тех вещей, которые делают меня счастливее.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reasons reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Почему ты особенная</p>
+        <h2>Несколько причин, почему ты мне дорога</h2>
+      </div>
+
+      <div class="reason-list">
+        <div class="reason reveal-item">За твою доброту и заботу</div>
+        <div class="reason reveal-item">За твою красивую улыбку</div>
+        <div class="reason reveal-item">За то, что рядом с тобой спокойно</div>
+        <div class="reason reveal-item">За наши разговоры и смех</div>
+        <div class="reason reveal-item">За каждый момент, проведённый вместе</div>
+      </div>
+    </section>
+
+    <section class="section flowers reveal">
+      <div class="flowers-content">
+        <p class="eyebrow">Твои любимые цветы</p>
+        <h2>Ромашки и хризантемы 🌼</h2>
+        <p>
+          Я помню, как ты любишь ромашки и хризантемы. Поэтому пусть они станут
+          маленькой частью этого подарка и напоминают тебе о моей заботе.
+        </p>
+        <div class="flower-badges" aria-label="Любимые цветы Кристины">
+          <span>🌼 Ромашки</span>
+          <span>🤍 Хризантемы</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surprise reveal">
+      <div class="surprise-card">
+        <p class="eyebrow">И ещё кое-что...</p>
+        <h2>Нажми на кнопку</h2>
+        <button id="surpriseButton" class="main-button">Открыть поздравление</button>
+
+        <div class="hidden-message" id="hiddenMessage">
+          <h3>Моя любимая ❤️</h3>
+          <div
+            id="typedMessage"
+            class="typed-message"
+            data-text="Кристина, за эти пять месяцев ты стала для меня по-настоящему близким и дорогим человеком. Мне очень нравится проводить с тобой время, разговаривать, смеяться и просто знать, что ты рядом.||Спасибо тебе за твою доброту, нежность, улыбку и за все моменты, которые уже стали для меня важными. Рядом с тобой даже самый обычный день становится теплее и лучше.||В твой день рождения я хочу пожелать тебе счастья, спокойствия, исполнения желаний и как можно больше причин улыбаться. Оставайся такой же красивой, искренней и особенной.||Я очень рад, что встретил тебя. Спасибо тебе за наши первые пять месяцев. Надеюсь, что это только начало нашей долгой и счастливой истории.||С днём рождения, моя Кристина ❤️"
+          ></div>
+          <div class="final-love-line" id="finalLoveLine">
+            <span>🌼</span>
+            <strong>Спасибо за эти пять месяцев.</strong>
+            <p>Пусть впереди у нас будет ещё очень много счастливых моментов вместе ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-player" id="musicPlayer">
+    <button class="music-button" id="musicButton" type="button" aria-label="Включить музыку">
+      <span id="musicIcon">🎵</span>
+      <span id="musicText">Включить музыку</span>
+    </button>
+    <div class="music-progress" aria-hidden="true">
+      <div class="music-progress-fill" id="musicProgressFill"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Сделано с любовью специально для тебя ❤️</p>
+    <a href="#top">Вернуться наверх</a>
+  </footer>
+  <audio id="bgMusic" preload="metadata" playsinline>
+    <source src="audio/song.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
