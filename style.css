@@ -722,3 +722,80 @@ footer a {
     padding-bottom: 38px;
   }
 }
+
+
+/* Последняя мобильная полировка */
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 28px;
+  }
+
+  .surprise {
+    padding-bottom: 34px;
+  }
+
+  .surprise-card {
+    overflow: visible;
+  }
+
+  .hidden-message,
+  .hidden-message.show {
+    overflow: visible;
+  }
+
+  .final-love-line {
+    margin-top: 22px;
+    padding: 22px 6px 4px;
+  }
+
+  .final-love-line span {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .final-love-line strong {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.22;
+  }
+
+  .final-love-line p {
+    max-width: 290px;
+    margin: 12px auto 0;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .music-player {
+    left: auto;
+    right: 14px;
+    bottom: max(14px, env(safe-area-inset-bottom));
+    width: 58px;
+    height: 58px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .music-button {
+    width: 58px;
+    height: 58px;
+    min-height: 58px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+
+  #musicText {
+    display: none;
+  }
+
+  .music-progress {
+    display: none;
+  }
+
+  footer {
+    padding: 28px 70px 30px 20px;
+  }
+}
