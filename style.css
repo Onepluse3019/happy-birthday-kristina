@@ -288,7 +288,7 @@ a {
 }
 
 .hidden-message.show {
-  max-height: 1000px;
+  max-height: 6000px;
   margin-top: 40px;
   opacity: 1;
 }
@@ -651,5 +651,74 @@ footer a {
 
   .flower-corner {
     opacity: .1;
+  }
+}
+
+
+/* Финальные исправления для телефона */
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 86px;
+  }
+
+  .section {
+    padding: 58px 16px;
+  }
+
+  .surprise-card {
+    padding: 34px 18px 42px;
+    border-radius: 24px;
+  }
+
+  .hidden-message.show {
+    max-height: 7000px;
+    margin-top: 30px;
+  }
+
+  .hidden-message h3 {
+    font-size: 36px;
+  }
+
+  .typed-message {
+    min-height: 0;
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .typed-message p {
+    margin-bottom: 16px;
+  }
+
+  .typed-message .signature {
+    font-size: 31px;
+    line-height: 1.35;
+  }
+
+  .final-love-line strong {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .music-player {
+    left: 12px;
+    right: 12px;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 18px;
+  }
+
+  .music-button {
+    min-height: 42px;
+    padding: 7px 12px;
+    font-size: 15px;
+  }
+
+  .music-progress {
+    margin: 0 10px 5px;
+  }
+
+  footer {
+    padding-bottom: 38px;
   }
 }

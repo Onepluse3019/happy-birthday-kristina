@@ -123,6 +123,10 @@ const musicIcon = document.getElementById("musicIcon");
 const musicText = document.getElementById("musicText");
 const musicProgressFill = document.getElementById("musicProgressFill");
 
+if (music) {
+  music.loop = true;
+}
+
 function setMusicState(isPlaying) {
   musicIcon.textContent = isPlaying ? "⏸️" : "🎵";
   musicText.textContent = isPlaying ? "Остановить музыку" : "Включить музыку";
@@ -143,8 +147,8 @@ musicButton?.addEventListener("click", async () => {
     }
   } catch (error) {
     console.error("Не удалось включить музыку:", error);
-    musicText.textContent = "Распакуй архив и открой заново";
-    setTimeout(() => setMusicState(false), 3500);
+    musicText.textContent = "Нажми ещё раз";
+    setTimeout(() => setMusicState(false), 2200);
   }
 });
 
@@ -154,11 +158,11 @@ music?.addEventListener("timeupdate", () => {
 });
 
 music?.addEventListener("ended", () => {
+  // На всякий случай запускаем песню заново, если loop не сработал в браузере.
   music.currentTime = 0;
-  setMusicState(false);
-  if (musicProgressFill) musicProgressFill.style.width = "0%";
+  music.play().catch(() => setMusicState(false));
 });
 
 music?.addEventListener("error", () => {
-  if (musicText) musicText.textContent = "Музыка не загрузилась";
+  if (musicText) musicText.textContent = "Обнови страницу и нажми снова";
 });
